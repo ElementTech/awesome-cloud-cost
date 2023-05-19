@@ -11,10 +11,10 @@
 A curated list of awesome tips, tricks and hacks for saving cost on the cloud
 
 <!-- image -->
-
+<!-- 
 <a href="" target="_blank" rel="noopener noreferrer">
   <img src="" />
-</a>
+</a> -->
 
 <!-- description -->
 
