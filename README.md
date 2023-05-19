@@ -5,6 +5,7 @@
 <!--lint ignore no-dead-urls-->
 
 # Awesome Cloud Cost
+
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 <!-- [![lint](https://github.com/jatalocks/awesome-cloud-cost/actions/workflows/lint.yaml/badge.svg)](https://github.com/jatalocks/awesome-cloud-cost/actions/workflows/lint.yaml) -->
 
@@ -34,6 +35,8 @@ A curated list of awesome tips, tricks and hacks for saving cost on the cloud
     - [Networking](#networking)
     - [S3](#s3)
   - [Kubernetes](#kubernetes)
+  - [Datadog](#datadog)
+    - [APM](#apm)
   - [Contributing](#contributing)
   - [Contributors](#contributors)
 
@@ -115,6 +118,27 @@ A curated list of awesome tips, tricks and hacks for saving cost on the cloud
 
       </details>
 
+## Datadog
+
+### APM
+- In order to reduce APM costs, consolidate identical workloads on the same nodes where possible.
+  - <details>
+      <summary>K8s App Consolidation Trick</summary>
+      <p>This configuration makes controllers prefer scheduling in the same nodes at all times. It can reduce the amount of APM hosts that are being billed in Datadog</p>
+
+      ```yaml
+      podAffinity:
+        preferredDuringSchedulingIgnoredDuringExecution: 
+        - weight: 100  
+          podAffinityTerm:
+            labelSelector:
+              matchExpressions:
+              - key: app
+                operator: In
+                values:
+                - myapp
+            topologyKey: kubernetes.io/hostname      
+      ```
 <!-- END CONTENT -->
 
 ## Contributing
