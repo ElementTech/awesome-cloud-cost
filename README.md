@@ -4,7 +4,9 @@
 
 <!--lint ignore no-dead-urls-->
 
-# Awesome Cloud Cost [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![lint](https://github.com/jatalocks/awesome-cloud-cost/actions/workflows/lint.yaml/badge.svg)](https://github.com/jatalocks/awesome-cloud-cost/actions/workflows/lint.yaml)
+# Awesome Cloud Cost
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+<!-- [![lint](https://github.com/jatalocks/awesome-cloud-cost/actions/workflows/lint.yaml/badge.svg)](https://github.com/jatalocks/awesome-cloud-cost/actions/workflows/lint.yaml) -->
 
 <!-- subtitle -->
 
@@ -24,7 +26,7 @@ A curated list of awesome tips, tricks and hacks for saving cost on the cloud
 
 ## Contents
 
-- [Awesome Cloud Cost  ](#awesome-cloud-cost--)
+- [Awesome Cloud Cost](#awesome-cloud-cost)
   - [Contents](#contents)
   - [General](#general)
   - [AWS](#aws)
