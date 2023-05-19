@@ -63,7 +63,7 @@ A curated list of awesome tips, tricks and hacks for saving cost on the cloud
 
 - Move away from Classic load balancers as they are [deprecated](https://aws.amazon.com/blogs/aws/ec2-classic-is-retiring-heres-how-to-prepare/) for EC2-Classic networks and cost more, use Network or Application load balancers instead.
 
-- Most likely, move away from VPC peering to [Transit Gateways](https://aws.amazon.com/transit-gateway/) (or [Network Manager](https://aws.amazon.com/transit-gateway/network-manager/)) and VPC Sharing. Peering is costlier when there are many VPCs. Take the time to calculate your usage and network traffic.
+- Most likely, move away from VPC peering to [Transit Gateways](https://aws.amazon.com/transit-gateway/) (or [Network Manager](https://aws.amazon.com/transit-gateway/network-manager/)) and [VPC Sharing](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-sharing.html). Peering is costlier when there are many VPCs. Take the time to calculate your usage and network traffic.
 
 - Use [VPC Endpoints](https://docs.aws.amazon.com/vpc/latest/privatelink/concepts.html) when your workloads access AWS services from within AWS. Check however if the cost of the endpoint isn't higher than the cost of your usage without it.
 
