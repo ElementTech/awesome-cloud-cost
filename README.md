@@ -23,6 +23,7 @@ A curated list of awesome tips, tricks and hacks for saving cost on the cloud
 <!-- TOC -->
 
 ## Contents
+
 - [Awesome Cloud Cost  ](#awesome-cloud-cost--)
   - [Contents](#contents)
   - [General](#general)
@@ -88,7 +89,7 @@ A curated list of awesome tips, tricks and hacks for saving cost on the cloud
   - [Vertical Pod Autoscaler](https://github.com/kubernetes/autoscaler/tree/master/vertical-pod-autoscaler)
 
 - If possible, prefer using only a single region to avoid network transfer costs between nodes. Preferably when it's not production.
-    - <details>
+  - <details>
       <summary>Single Region Highly Available AWS EKS Karpenter Trick</summary>
       <p>This dual-provisioner configuration allows Karpenter to softly always prefer scheduling on a single AZ, unless it is unavailable. In this scenario, it will move to another AZ until the former AZ works.</p>
 
@@ -109,6 +110,7 @@ A curated list of awesome tips, tricks and hacks for saving cost on the cloud
             operator: NotIn
             values: ["us-east-1a", "eu-west-1a"]
       ```
+
       </details>
 
 <!-- END CONTENT -->
