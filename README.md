@@ -23,17 +23,16 @@ A curated list of awesome tips, tricks and hacks for saving cost on the cloud
 <!-- TOC -->
 
 ## Contents
-
 - [Awesome Cloud Cost  ](#awesome-cloud-cost--)
   - [Contents](#contents)
   - [General](#general)
   - [AWS](#aws)
     - [Compute](#compute)
-  - [Networking](#networking)
+    - [Networking](#networking)
     - [S3](#s3)
   - [Kubernetes](#kubernetes)
   - [Contributing](#contributing)
-    - [Contributors](#contributors)
+  - [Contributors](#contributors)
 
 <!-- CONTENT -->
 ## General
@@ -59,7 +58,7 @@ A curated list of awesome tips, tricks and hacks for saving cost on the cloud
 - Prefer higher generation EC2 instances, they will always be cheaper. It is also true for other products such as storage solutions like gp2 as opposed to gp3.
   - [EC2 Types List](https://instances.vantage.sh/)
 
-## Networking
+### Networking
 
 - Move away from Classic load balancers as they are [deprecated](https://aws.amazon.com/blogs/aws/ec2-classic-is-retiring-heres-how-to-prepare/) for EC2-Classic networks and cost more, use Network or Application load balancers instead.
 
@@ -118,6 +117,6 @@ A curated list of awesome tips, tricks and hacks for saving cost on the cloud
 
 [Contributions of any kind welcome, just follow the guidelines](contributing.md)!
 
-### Contributors
+## Contributors
 
 [Thanks goes to these contributors](https://github.com/jatalocks/awesome-cloud-cost/graphs/contributors)!
