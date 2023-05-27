@@ -30,6 +30,8 @@ A curated list of awesome tips, tricks and hacks for saving cost on the cloud
 - [Awesome Cloud Cost](#awesome-cloud-cost)
   - [Contents](#contents)
   - [General](#general)
+  - [GCP](#gcp)
+    - [Compute](#compute)
   - [AWS](#aws)
     - [Compute](#compute)
     - [Networking](#networking)
@@ -50,8 +52,17 @@ A curated list of awesome tips, tricks and hacks for saving cost on the cloud
 - Always prefer spot instances where stateless and possible as opposed to on-demand.
 
 - Use automated scaling solutions to power off dev workloads during weekends if possible.
+  - [Kube-Downscaler](https://codeberg.org/hjacobs/kube-downscaler)
 
 - Filter your logs, metrics and traces before they reach your monitoring solution. In almost all solutions, SaaS or not, you're being charged for their storage or ingestion.
+Fl
+## GCP
+
+## Compute
+
+- Don't forget to specify min_cpu_platform for platforms that support it. You will pay the same price for faster instances (e.g. specify AMD Milan for n2d instance, or Intel Ice Lake for n2).
+
+- While their AMD Milan instances currently offer the best performance and performance for price in general, for most regions they give you the same CPU reservation price for t2d as they do for n2d. This is significant because the t2d gives you TWICE the actual CPU cores, as it is 1core = 1vCPU (no HT), where all other AMD/Intel types are 1HT = 1vCPU.
 
 ## AWS
 
@@ -60,13 +71,17 @@ A curated list of awesome tips, tricks and hacks for saving cost on the cloud
 - Use Reserved Instances and Savings Plans. Consider using "smart" automated RI SaaS solutions which are based on your existing workloads.
   - [spot.io](https://spot.io/)
   - [zesty.co](https://zesty.co/)
+  - [Flexsave](https://www.doit.com/flexsave/)
 
 - Prefer higher generation EC2 instances, they will always be cheaper. It is also true for other products such as storage solutions like gp2 as opposed to gp3.
   - [EC2 Types List](https://instances.vantage.sh/)
 
+- The Graviton3-based instances are the best multi-threaded performance/price across their general/compute offerings.
+
 ### Networking
 
-- Move away from Classic load balancers as they are [deprecated](https://aws.amazon.com/blogs/aws/ec2-classic-is-retiring-heres-how-to-prepare/) for EC2-Classic networks and cost more, use Network or Application load balancers instead.
+- Move away from Classic load balancers as they are [deprecated](https://aws.amazon.com/blogs/aws/ec2-classic-is-retiring-heres-how-to-prepare/) for EC2-Classic networks and cost more*, use Network or Application load balancers instead.
+  - *CLBs do not incur cost for TLS negociations and for established connections. It's not always cheaper to do NLBs or ALBs 
 
 - Most likely, move away from VPC peering to [Transit Gateways](https://aws.amazon.com/transit-gateway/) (or [Network Manager](https://aws.amazon.com/transit-gateway/network-manager/)) and [VPC Sharing](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-sharing.html). Peering is costlier when there are many VPCs. Take the time to calculate your usage and network traffic.
 
@@ -88,6 +103,7 @@ A curated list of awesome tips, tricks and hacks for saving cost on the cloud
 - Consolidate your pods on less nodes. Leave only as little headroom as you intend for in your nodes.
   - [Cluster-Autoscaler](https://github.com/kubernetes/autoscaler/tree/master/cluster-autoscaler)
   - [AWS-Karpenter](https://karpenter.sh/)
+  - [Cast.ai](https://cast.ai/)
 
 - Don't over commit resources. Pod requests must be optimized over time in order to not over provision.
   - [ScaleOps](https://www.scaleops.co/)
