@@ -58,7 +58,7 @@ A curated list of awesome tips, tricks and hacks for saving cost on the cloud
 Fl
 ## GCP
 
-## Compute
+### Compute
 
 - Don't forget to specify min_cpu_platform for platforms that support it. You will pay the same price for faster instances (e.g. specify AMD Milan for n2d instance, or Intel Ice Lake for n2).
 
