@@ -99,7 +99,9 @@ Fl
 - If using S3 Glacier, [compress your files](https://aws.amazon.com/blogs/storage/compressing-and-archiving-logs-to-the-amazon-s3-glacier-storage-classes/) into as few as possible before uploading in order to save requests cost.
 
 ## Kubernetes
-
+ 
+- Prefer to use the ingress controller instead of LoadBalancer for exposing services, so they will use only one load balancer and be exposed through only the ingress.
+  
 - Consolidate your pods on less nodes. Leave only as little headroom as you intend for in your nodes.
   - [Cluster-Autoscaler](https://github.com/kubernetes/autoscaler/tree/master/cluster-autoscaler)
   - [AWS-Karpenter](https://karpenter.sh/)
