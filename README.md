@@ -78,6 +78,8 @@ Fl
 
 - The Graviton3-based instances are the best multi-threaded performance/price across their general/compute offerings.
 
+- if you're using Databricks on AWS, you can cut your Databricks for AWS costs by 50% and automate cluster management with [Gradient by Sync](https://synccomputing.com/)
+
 ### Networking
 
 - Move away from Classic load balancers as they are [deprecated](https://aws.amazon.com/blogs/aws/ec2-classic-is-retiring-heres-how-to-prepare/) for EC2-Classic networks and cost more*, use Network or Application load balancers instead.
