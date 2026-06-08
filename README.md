@@ -72,6 +72,7 @@ Fl
   - [spot.io](https://spot.io/)
   - [zesty.co](https://zesty.co/)
   - [Flexsave](https://www.doit.com/flexsave/)
+  - [Fortem](https://fortem.dev) — ECS Fargate fleet control plane. Schedules idle dev/staging environments off (60-70% compute savings). Per-environment cost visibility. Free read-only Fleet Audit.
 
 - Prefer higher generation EC2 instances, they will always be cheaper. It is also true for other products such as storage solutions like gp2 as opposed to gp3.
   - [EC2 Types List](https://instances.vantage.sh/)
