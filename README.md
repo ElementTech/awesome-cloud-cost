@@ -56,6 +56,10 @@ A curated list of awesome tips, tricks and hacks for saving cost on the cloud
 
 - Filter your logs, metrics and traces before they reach your monitoring solution. In almost all solutions, SaaS or not, you're being charged for their storage or ingestion.
 Fl
+
+- [CloudWorth](https://www.getcloudworth.com/) - Zero-dependency probe for Linux and Windows Server that checks VPS and cloud instances for overselling (CPU steal time, disk cache fakery, old CPU generation) and gives FinOps right-sizing advice. Freemium, closed source, first check free without signup. Available in 11 languages.
+
+
 ## GCP
 
 ### Compute
