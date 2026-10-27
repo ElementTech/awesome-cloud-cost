@@ -55,6 +55,9 @@ A curated list of awesome tips, tricks and hacks for saving cost on the cloud
   - [Kube-Downscaler](https://codeberg.org/hjacobs/kube-downscaler)
 
 - Filter your logs, metrics and traces before they reach your monitoring solution. In almost all solutions, SaaS or not, you're being charged for their storage or ingestion.
+
+- Compare the total monthly cost of VPS plans (including IPv4, backups and egress), not just list prices, before picking a provider.
+  - [VPSLedger](https://vpsledger.pages.dev/) - True monthly VPS cost (list price plus IPv4, backups and egress) for 33 plans across 15 providers, with every price sourced and dated and open JSON data (CC BY 4.0).
 Fl
 ## GCP
 
