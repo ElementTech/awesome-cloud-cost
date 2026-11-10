@@ -56,6 +56,8 @@ A curated list of awesome tips, tricks and hacks for saving cost on the cloud
 
 - Filter your logs, metrics and traces before they reach your monitoring solution. In almost all solutions, SaaS or not, you're being charged for their storage or ingestion.
 Fl
+- [VPS price per unit](https://serverbudget.com/vps-price-compare) - Published VPS prices normalised per GB RAM, per vCPU and per GB storage.
+
 ## GCP
 
 ### Compute
